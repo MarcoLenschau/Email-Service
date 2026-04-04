@@ -6,3 +6,6 @@ dist/
 
 # Logs
 package-lock.json
+
+# Environment variables
+.env

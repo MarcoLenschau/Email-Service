@@ -4,18 +4,21 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "start": "tsc && node dist/server.js",
     "build": "tsc"
   },
   "keywords": [
     "email",
     "service",
-    "nodejs"
+    "nodejs",
+    "express"
   ],
   "author": "Marco Lenschau",
   "license": "MIT",
   "description": "",
   "dependencies": {
     "dotenv": "^17.4.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nodemailer": "^8.0.4"
   }
 }
