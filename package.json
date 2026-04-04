@@ -1,0 +1,21 @@
+{
+  "name": "emailservice",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "keywords": [
+    "email",
+    "service",
+    "nodejs"
+  ],
+  "author": "Marco Lenschau",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1"
+  }
+}
