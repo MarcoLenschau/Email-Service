@@ -1,7 +1,11 @@
 import type { Request, Response } from 'express';
-require('dotenv').config();
+
 const app = require('express')();
 const nodemailer = require('nodemailer');
+const fs = require('fs');
+
+if (fs.existsSync('.env')) require('dotenv').config();
+
 app.use(require('express').json());
 
 app.listen(process.env.PORT, () => {
