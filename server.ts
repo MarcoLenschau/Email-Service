@@ -13,6 +13,7 @@ app.listen(process.env.PORT, () => {
 });
 
 app.post("/api/email/send", (req: Request, res: Response) => {
+
     const apiKeyHeader = req.headers["api-key"];
     if (!apiKeyHeader) {
         res.status(400).send("Bad Request: API Key header missing");
@@ -33,6 +34,17 @@ app.post("/api/email/send", (req: Request, res: Response) => {
     });
 }); 
 
+/**
+ * Sends an email using the specified subject and text content.
+ * 
+ * @author Marco Lenschau <contact@marcolenschau.com>
+ * @param subject - The subject line of the email.
+ * @param text - The plain text content of the email.
+ * @param callback - A function to be called upon successful email sending.
+ * @param errorCallback - A function to be called if an error occurs during email sending.
+ * @return void
+ * 
+ */
 const sendMail = (subject: string, text: string, callback: () => void, errorCallback: (error: Error) => void) => {
     nodemailer.createTransport({host: process.env.SMTP_HOST, port: process.env.SMTP_PORT, secure: true,
         auth: {
