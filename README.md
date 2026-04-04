@@ -1,9 +1,15 @@
 # Email Microservice
 
 ## Table of Contents
+- [Technologys](#Technologys)
 - [Prerequisites](#prerequisites)
 - [Quickstart](#quickstart)
 - [Usage](#usage)
+
+### Technologys
+
+![Express](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
 ## Prerequisites
 - Docker
